@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at 50% 40%, #20243a 0%, #0b0d14 45%, #050609 100%);
+
+    font-family: "Courier New", monospace;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+
+/* ---------- BACKGROUND GLOW ---------- */
+
+body::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    background: #5b5ff7;
+
+    filter: blur(180px);
+
+    opacity: 0.12;
+
+    z-index: -1;
+}
+
+
+/* ---------- TITLE ---------- */
+
+h1 {
+    margin-bottom: 35px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    letter-spacing: 10px;
+
+    color: #bfc5ff;
+
+    text-shadow:
+        0 0 10px rgba(120, 130, 255, 0.6);
+
+    text-transform: uppercase;
+}
+
+
+/* ---------- WATCH BODY ---------- */
+
+#clock {
+
+    position: relative;
+
+    width: 470px;
+
+    padding: 35px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(45, 48, 65, 0.95),
+            rgba(15, 17, 25, 0.98)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.7),
+        inset 0 1px 1px rgba(255, 255, 255, 0.15),
+        inset 0 -5px 20px rgba(0, 0, 0, 0.5);
+
+    backdrop-filter: blur(20px);
+
+    text-align: center;
+}
+
+
+/* ---------- FUTURISTIC CORNERS ---------- */
+
+#clock::before,
+#clock::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 45px;
+    height: 45px;
+
+    border: 2px solid #6970ff;
+}
+
+#clock::before {
+
+    top: 12px;
+    left: 12px;
+
+    border-right: none;
+    border-bottom: none;
+
+    border-radius: 12px 0 0 0;
+}
+
+#clock::after {
+
+    bottom: 12px;
+    right: 12px;
+
+    border-left: none;
+    border-top: none;
+
+    border-radius: 0 0 12px 0;
+}
+
+
+/* ---------- DIGITAL SCREEN ---------- */
+
+#output {
+
+    position: relative;
+
+    padding: 28px 15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0d101b,
+            #080a11
+        );
+
+    border: 1px solid rgba(130, 140, 255, 0.3);
+
+    border-radius: 18px;
+
+    color: #dce0ff;
+
+    font-size: 43px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    text-shadow:
+        0 0 8px rgba(120, 130, 255, 0.9),
+        0 0 25px rgba(90, 100, 255, 0.5);
+
+    box-shadow:
+        inset 0 0 25px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(80, 90, 255, 0.12);
+
+    overflow: hidden;
+}
+
+
+/* ---------- SCREEN SCANLINE ---------- */
+
+#output::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 4px,
+            rgba(255, 255, 255, 0.015) 5px
+        );
+
+    pointer-events: none;
+}
+
+
+/* ---------- START BUTTON ---------- */
+
+button {
+
+    margin-top: 30px;
+
+    padding: 13px 40px;
+
+    border: 1px solid rgba(130, 140, 255, 0.5);
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6366f1,
+            #8b5cf6
+        );
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px rgba(99, 102, 241, 0.3);
+
+    transition: all 0.25s ease;
+}
+
+
+/* ---------- BUTTON HOVER ---------- */
+
+button:hover {
+
+    transform: translateY(-3px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #818cf8,
+            #a78bfa
+        );
+
+    box-shadow:
+        0 10px 35px rgba(99, 102, 241, 0.5);
+}
+
+
+/* ---------- BUTTON CLICK ---------- */
+
+button:active {
+
+    transform: translateY(0);
+
+    box-shadow:
+        0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 550px) {
+
+    #clock {
+        width: 90%;
+        padding: 25px;
+    }
+
+    #output {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    h1 {
+        font-size: 14px;
+        letter-spacing: 6px;
+    }
+}   
