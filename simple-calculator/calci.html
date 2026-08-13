@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JS Calculator</title>
+
+    <link rel="stylesheet" href="calci.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <h1>JS CALCULATOR</h1>
+
+        <p class="subtitle">SELECT AN OPERATION</p>
+
+        <div class="operations">
+
+            <button onclick="showPanel('add')">
+                <span>+</span>
+                ADD
+            </button>
+
+            <button onclick="showPanel('sub')">
+                <span>−</span>
+                SUBTRACT
+            </button>
+
+            <button onclick="showPanel('mul')">
+                <span>×</span>
+                MULTIPLY
+            </button>
+
+            <button onclick="showPanel('div')">
+                <span>÷</span>
+                DIVIDE
+            </button>
+
+        </div>
+
+
+        <!-- ADD PANEL -->
+
+        <div id="addPanel" class="panel">
+
+            <h2>ADD TWO NUMBERS</h2>
+
+            <input type="number" id="add1" placeholder="Enter number 1">
+
+            <input type="number" id="add2" placeholder="Enter number 2">
+
+            <button onclick="add()">CALCULATE</button>
+
+            <p>Result:</p>
+
+            <div id="addResult">---</div>
+
+        </div>
+
+
+        <!-- SUBTRACT PANEL -->
+
+        <div id="subPanel" class="panel">
+
+            <h2>SUBTRACT TWO NUMBERS</h2>
+
+            <input type="number" id="sub1" placeholder="Enter number 1">
+
+            <input type="number" id="sub2" placeholder="Enter number 2">
+
+            <button onclick="sub()">CALCULATE</button>
+
+            <p>Result:</p>
+
+            <div id="subResult">---</div>
+
+        </div>
+
+
+        <!-- MULTIPLY PANEL -->
+
+        <div id="mulPanel" class="panel">
+
+            <h2>MULTIPLY TWO NUMBERS</h2>
+
+            <input type="number" id="mul1" placeholder="Enter number 1">
+
+            <input type="number" id="mul2" placeholder="Enter number 2">
+
+            <button onclick="mul()">CALCULATE</button>
+
+            <p>Result:</p>
+
+            <div id="mulResult">---</div>
+
+        </div>
+
+
+        <!-- DIVIDE PANEL -->
+
+        <div id="divPanel" class="panel">
+
+            <h2>DIVIDE TWO NUMBERS</h2>
+
+            <input type="number" id="div1" placeholder="Enter number 1">
+
+            <input type="number" id="div2" placeholder="Enter number 2">
+
+            <button onclick="divide()">CALCULATE</button>
+
+            <p>Result:</p>
+
+            <div id="divResult">---</div>
+
+        </div>
+
+    </div>
+
+
+    <script src="calci.js"></script>
+
+</body>
+
+</html>
