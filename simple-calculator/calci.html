@@ -1,128 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>JS Calculator</title>
-
-    <link rel="stylesheet" href="calci.css">
+    <title>Calculator By Arhan</title>
+    <link rel = "stylesheet" href ="calci.css">
+    <script src="calci.js"></script>
 </head>
 
 <body>
 
-    <div class="calculator">
+<div class="calculator">
+    <h1>Calculator</h1>
 
-        <h1>JS CALCULATOR</h1>
+    <table>
+        <tr>
+            <td colspan="3">
+                <input type="text" id="result">
+            </td>
+            <td>
+                <input type="button" value="C" class="clear" onclick="clr()">
+            </td>
+        </tr>
 
-        <p class="subtitle">SELECT AN OPERATION</p>
+        <tr>
+            <td><input type="button" value="1" onclick="dis('1')"></td>
+            <td><input type="button" value="2" onclick="dis('2')"></td>
+            <td><input type="button" value="3" onclick="dis('3')"></td>
+            <td><input type="button" value="/" class="operator" onclick="dis('/')"></td>
+        </tr>
 
-        <div class="operations">
+        <tr>
+            <td><input type="button" value="4" onclick="dis('4')"></td>
+            <td><input type="button" value="5" onclick="dis('5')"></td>
+            <td><input type="button" value="6" onclick="dis('6')"></td>
+            <td><input type="button" value="-" class="operator" onclick="dis('-')"></td>
+        </tr>
 
-            <button onclick="showPanel('add')">
-                <span>+</span>
-                ADD
-            </button>
+        <tr>
+            <td><input type="button" value="7" onclick="dis('7')"></td>
+            <td><input type="button" value="8" onclick="dis('8')"></td>
+            <td><input type="button" value="9" onclick="dis('9')"></td>
+            <td><input type="button" value="+" class="operator" onclick="dis('+')"></td>
+        </tr>
 
-            <button onclick="showPanel('sub')">
-                <span>−</span>
-                SUBTRACT
-            </button>
-
-            <button onclick="showPanel('mul')">
-                <span>×</span>
-                MULTIPLY
-            </button>
-
-            <button onclick="showPanel('div')">
-                <span>÷</span>
-                DIVIDE
-            </button>
-
-        </div>
-
-
-        <!-- ADD PANEL -->
-
-        <div id="addPanel" class="panel">
-
-            <h2>ADD TWO NUMBERS</h2>
-
-            <input type="number" id="add1" placeholder="Enter number 1">
-
-            <input type="number" id="add2" placeholder="Enter number 2">
-
-            <button onclick="add()">CALCULATE</button>
-
-            <p>Result:</p>
-
-            <div id="addResult">---</div>
-
-        </div>
-
-
-        <!-- SUBTRACT PANEL -->
-
-        <div id="subPanel" class="panel">
-
-            <h2>SUBTRACT TWO NUMBERS</h2>
-
-            <input type="number" id="sub1" placeholder="Enter number 1">
-
-            <input type="number" id="sub2" placeholder="Enter number 2">
-
-            <button onclick="sub()">CALCULATE</button>
-
-            <p>Result:</p>
-
-            <div id="subResult">---</div>
-
-        </div>
-
-
-        <!-- MULTIPLY PANEL -->
-
-        <div id="mulPanel" class="panel">
-
-            <h2>MULTIPLY TWO NUMBERS</h2>
-
-            <input type="number" id="mul1" placeholder="Enter number 1">
-
-            <input type="number" id="mul2" placeholder="Enter number 2">
-
-            <button onclick="mul()">CALCULATE</button>
-
-            <p>Result:</p>
-
-            <div id="mulResult">---</div>
-
-        </div>
-
-
-        <!-- DIVIDE PANEL -->
-
-        <div id="divPanel" class="panel">
-
-            <h2>DIVIDE TWO NUMBERS</h2>
-
-            <input type="number" id="div1" placeholder="Enter number 1">
-
-            <input type="number" id="div2" placeholder="Enter number 2">
-
-            <button onclick="divide()">CALCULATE</button>
-
-            <p>Result:</p>
-
-            <div id="divResult">---</div>
-
-        </div>
-
-    </div>
-
-
-    <script src="calci.js"></script>
+        <tr>
+            <td><input type="button" value="." onclick="dis('.')"></td>
+            <td><input type="button" value="0" onclick="dis('0')"></td>
+            <td><input type="button" value="=" class="equal" onclick="solve()"></td>
+            <td><input type="button" value="*" class="operator" onclick="dis('*')"></td>
+        </tr>
+    </table>
+</div>
 
 </body>
-
 </html>
