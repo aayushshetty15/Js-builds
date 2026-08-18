@@ -1,3 +1,4 @@
+// Display value on screen
 function dis(value) {
     document.getElementById("result").value += value;
 }
