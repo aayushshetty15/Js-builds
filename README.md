@@ -114,43 +114,6 @@ A basic calculator built using **HTML, CSS, and JavaScript** that performs commo
 - Input and output handling
 
 ---
-
-## 🛠️ Technologies Used
-
-| Technology | Purpose |
-|---|---|
-| HTML5 | Creating webpage structure |
-| CSS3 | Styling and designing webpages |
-| JavaScript | Adding functionality and interactivity |
-| Regular Expressions | Validating user input |
-
----
-
-## 📚 Concepts Practiced
-
-- Variables
-- Functions
-- `if` / `else` conditions
-- DOM manipulation
-- Event handling
-- `onclick`
-- `onsubmit`
-- `getElementById()`
-- `.value`
-- `.length`
-- `setInterval()`
-- JavaScript `Date`
-- `Math.random()`
-- Form validation
-- Regular Expressions
-- CSS Flexbox
-- CSS hover effects
-- CSS `transform`
-- CSS transitions
-- Glassmorphism UI
-
----
-
 ## 📁 Project Structure
 
     JavaScript-Mini-Projects/
@@ -174,40 +137,6 @@ A basic calculator built using **HTML, CSS, and JavaScript** that performs commo
         ├── index.html
         ├── calci.css
         └── calci.js
-
----
-
-## 🚀 How to Run
-
-1. Clone the repository.
-2. Open the project folder.
-3. Navigate to any project folder.
-4. Open the `index.html` file in your browser.
-
-No additional dependencies or installations are required.
-
----
-
-## 🎯 Purpose
-
-The purpose of this repository is to strengthen my understanding of **frontend web development and JavaScript fundamentals** by building small practical projects.
-
-These projects are part of my learning journey toward becoming a **Full Stack Web Developer**.
-
----
-
-## 🔮 Future Improvements
-
-- [ ] Make all projects fully responsive
-- [ ] Improve UI/UX
-- [ ] Add dark mode
-- [ ] Add keyboard support to the calculator
-- [ ] Add difficulty levels to the number guessing game
-- [ ] Improve form validation
-- [ ] Add more JavaScript projects
-- [ ] Connect the registration form to a backend
-- [ ] Store registration data in a database
-- [ ] Deploy the projects online
 
 ---
 
