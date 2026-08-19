@@ -1,0 +1,283 @@
+/* =========================
+   PAGE BACKGROUND
+   ========================= */
+
+body {
+    /* Gradient background */
+    background: linear-gradient(135deg, #0f172a, #312e81, #581c87);
+
+    /* Center the form */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Full screen height */
+    min-height: 100vh;
+
+    /* Font */
+    font-family: 'Poppins', sans-serif;
+
+    /* Remove default margin */
+    margin: 0;
+}
+
+
+/* =========================
+   GLASS FORM CARD
+   ========================= */
+
+.hero {
+    /* Transparent white layer */
+    background: rgba(255, 255, 255, 0.12);
+
+    /* Blur everything behind the card */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    /* Glass border */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    /* Rounded corners */
+    border-radius: 20px;
+
+    /* Space inside the card */
+    padding: 50px;
+
+    /* Text size */
+    font-size: 18px;
+
+    /* White text */
+    color: white;
+
+    /* Glass shadow */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   HEADING
+   ========================= */
+
+.hero h1 {
+    font-weight: 600;
+    margin-bottom: 30px;
+
+    /* Slight glow around heading */
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================
+   TEXT INPUTS
+   ========================= */
+
+.hero input[type="text"],
+.hero input[type="number"],
+.hero input[type="email"] {
+
+    /* Transparent input */
+    background: rgba(255, 255, 255, 0.12);
+
+    /* White text */
+    color: white;
+
+    /* Glass border */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    /* Space inside */
+    padding: 12px;
+
+    /* Input width */
+    width: 70%;
+
+    /* Rounded corners */
+    border-radius: 8px;
+
+    /* Include padding inside width */
+    box-sizing: border-box;
+
+    /* Font */
+    font-family: 'Poppins', sans-serif;
+
+    /* Smooth animation */
+    transition: 0.3s;
+}
+
+
+/* =========================
+   INPUT HOVER
+   ========================= */
+
+.hero input[type="text"]:hover,
+.hero input[type="number"]:hover,
+.hero input[type="email"]:hover {
+
+    /* Brighter glass */
+    background: rgba(255, 255, 255, 0.2);
+
+    /* Move slightly upward */
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   INPUT FOCUS
+   ========================= */
+
+.hero input[type="text"]:focus,
+.hero input[type="number"]:focus,
+.hero input[type="email"]:focus {
+
+    /* Remove browser outline */
+    outline: none;
+
+    /* Brighter background */
+    background: rgba(255, 255, 255, 0.2);
+
+    /* Purple/blue glow */
+    border: 1px solid #a78bfa;
+
+    /* Glow effect */
+    box-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+
+/* =========================
+   PLACEHOLDER
+   ========================= */
+
+input::placeholder {
+
+    /* Italic placeholder */
+    font-style: italic;
+
+    /* Light transparent text */
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* =========================
+   RADIO BUTTONS
+   ========================= */
+
+.hero input[type="radio"] {
+
+    /* Normal radio button size */
+    width: auto;
+
+    /* Remove unnecessary padding */
+    padding: 0;
+
+    /* Space between button and text */
+    margin-right: 8px;
+
+    /* Slightly bigger radio button */
+    transform: scale(1.1);
+
+    /* Accent color */
+    accent-color: #a78bfa;
+}
+
+
+/* =========================
+   COURSE DROPDOWN
+   ========================= */
+
+.hero select[name="course"] {
+
+    /* Transparent background */
+    background: rgba(255, 255, 255, 0.12);
+
+    /* White text */
+    color: white;
+
+    /* Glass border */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    /* Space inside */
+    padding: 12px;
+
+    /* Width */
+    width: 50%;
+
+    /* Rounded corners */
+    border-radius: 8px;
+
+    /* Font */
+    font-family: 'Poppins', sans-serif;
+
+    /* Smooth animation */
+    transition: 0.3s;
+}
+
+
+/* Dropdown hover */
+.hero select[name="course"]:hover {
+
+    /* Brighter glass */
+    background: rgba(255, 255, 255, 0.2);
+
+    /* Move upward */
+    transform: translateY(-2px);
+}
+
+
+/* Dropdown options */
+.hero select[name="course"] option {
+    /* Dark background so options remain readable */
+    background-color: #312e81;
+
+    /* White text */
+    color: white;
+}
+
+
+/* =========================
+   REGISTER BUTTON
+   ========================= */
+
+.hero input[type="submit"] {
+
+    /* Button width */
+    width: 30%;
+
+    /* Purple gradient */
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+
+    /* White text */
+    color: white;
+
+    /* Remove border */
+    border: none;
+
+    padding: 10px;
+
+    /* Rounded corners */
+    border-radius: 8px;
+
+    /* Pointer cursor */
+    cursor: pointer;
+
+    /* Font */
+    font-family: 'Poppins', sans-serif;
+
+    /* Smooth animation */
+    transition: 0.3s;
+}
+
+
+/* =========================
+   BUTTON HOVER
+   ========================= */
+
+.hero input[type="submit"]:hover {
+
+    /* Brighter gradient */
+    background: linear-gradient(135deg, #818cf8, #c084fc);
+
+    /* Move upward */
+    transform: translateY(-3px);
+
+    /* Purple glow */
+    box-shadow: 0 5px 20px rgba(168, 85, 247, 0.5);
+}

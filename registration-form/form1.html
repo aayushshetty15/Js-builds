@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form1.css">
+</head>
+<body>
+ <center>
+    <div class="hero">
+    <h1>Registration form</h1>
+    <form id="register" onsubmit="return Validation()">
+        <label>Enter your Name:</label><br>
+        <input type="text" id="name" placeholder=enter your name"><br><br>
+        <label>Enter your USN:</label><br>
+        <input type="text" id="usn" placeholder="enter your usn"><br><br>
+        <label>Enter your contact number:</label><br>
+        <input type="number" id="number" placeholder="enter your number"><br><br>
+        <label>Enter your Email id</label><br>
+        <input type="email" id="email" placeholder="example@gmail.com"><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" value="Male" name="Gender"> Male<br>
+        <input type="radio" value="Female" name="Gender"> Female<br>
+        <input type="radio" value="Prefer Not to Say" name="Gender"> Prefer not to say<br><br>
+        <label>Course:</label>
+        <select name="course">
+            <option value="">select course</option>
+            <option value="CS">Computer Science and Engineering</option>
+            <option value="IS">Information Science and Engineering</option>
+            <option value="Mech">Mechanical Engineering</option>
+            <option value="Ece">Electronics and communication Engineering</option>
+            <option value="CV">Civil Engineering</option>
+        </select><br><br>
+        <input type="submit" value="Register">
+    </form>
+    </div>
+ </center>
+</body>
+<script src="form1.js"></script>
+</html>
